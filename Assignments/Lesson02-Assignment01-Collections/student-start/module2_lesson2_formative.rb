@@ -10,3 +10,9 @@ p arr.select { |element| element % 3 == 0 }
 # and use `sort` and `reverse` methods to sort in descending order
 # Start with the line below and continue as 1 long method chain
 # p arr.select { |element| element % 3 == 0 }
+
+# this it's the solution
+range_numbers=1..1000
+new_array = range_numbers.select { |nums| nums%3==0 }
+           .reject{ |num| num < 500} 
+           p new_array.sort!.reverse!
